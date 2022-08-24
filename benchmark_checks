@@ -73,7 +73,7 @@ select @@global.foreign_key_checks;
 +
 (run_benchmark ${loop}) >> foreign_off.${loop}.log 2>&1
 
-mysql <<+
+mysql xxx <<+
 set global unique_checks=0;
 select @@global.unique_checks;
 +
